@@ -1,7 +1,10 @@
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
-
+import os
+# other statements
+this_dir = os.path.dirname(os.path.abspath(__file__)) 
+matlab_src_dir = os.path.abspath(os.path.join(this_dir, '..')) 
 project = 'Lumache'
 copyright = '2021, Graziella'
 author = 'Graziella'
@@ -37,3 +40,5 @@ epub_show_urls = 'footnote'
 
 # -- primary domain
 primary_domain = "mat"
+
+this_dir = os.path.dirname(os.path.abspath(__file__)) matlab_src_dir = os.path.abspath(os.path.join(this_dir, '..')) 
